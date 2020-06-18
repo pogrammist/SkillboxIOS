@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
