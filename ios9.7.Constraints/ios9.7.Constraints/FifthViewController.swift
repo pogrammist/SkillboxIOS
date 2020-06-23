@@ -18,8 +18,8 @@ class FifthViewController: UIViewController {
     @IBOutlet weak var showSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        leftTextField.text = leftLabel.text
+        rightTextField.text = rightLabel.text
     }
     
     @IBAction func typeLeftTextField(_ sender: Any) {
