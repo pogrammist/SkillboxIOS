@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		CE2C913924D2DF0700B8C40E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C913824D2DF0700B8C40E /* ProductCell.swift */; };
 		CE2C916124D323FE00B8C40E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C916024D323FE00B8C40E /* SecondViewController.swift */; };
-		CE2C916324D32B9D00B8C40E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C916224D32B9D00B8C40E /* Setting.swift */; };
 		CE2C916924D35C1F00B8C40E /* SettingCell02.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C916824D35C1F00B8C40E /* SettingCell02.swift */; };
 		CE2C917224D3641300B8C40E /* SettingCell01.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C917124D3641300B8C40E /* SettingCell01.swift */; };
 		CE2C917824D3656000B8C40E /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C917524D3656000B8C40E /* ThreeViewController.swift */; };
 		CE2C917C24D37E0700B8C40E /* HorizontalGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C917B24D37E0700B8C40E /* HorizontalGalleryCollectionViewCell.swift */; };
 		CE2C917E24D37FA700B8C40E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C917D24D37FA700B8C40E /* Food.swift */; };
 		CE2C918024D3970000B8C40E /* VerticalGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C917F24D3970000B8C40E /* VerticalGalleryCollectionViewCell.swift */; };
+		CE2C918224D43FE900B8C40E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C918124D43FE900B8C40E /* Setting.swift */; };
 		CEB6459924BFB0C6001FBB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6459824BFB0C6001FBB5E /* AppDelegate.swift */; };
 		CEB6459B24BFB0C6001FBB5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6459A24BFB0C6001FBB5E /* SceneDelegate.swift */; };
 		CEB6459D24BFB0C6001FBB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6459C24BFB0C6001FBB5E /* ViewController.swift */; };
@@ -28,13 +28,13 @@
 /* Begin PBXFileReference section */
 		CE2C913824D2DF0700B8C40E /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		CE2C916024D323FE00B8C40E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		CE2C916224D32B9D00B8C40E /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Setting.swift; path = ../../../ios10.7.Tables/ios10.7.Tables/Setting.swift; sourceTree = "<group>"; };
 		CE2C916824D35C1F00B8C40E /* SettingCell02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell02.swift; sourceTree = "<group>"; };
 		CE2C917124D3641300B8C40E /* SettingCell01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell01.swift; sourceTree = "<group>"; };
 		CE2C917524D3656000B8C40E /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		CE2C917B24D37E0700B8C40E /* HorizontalGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE2C917D24D37FA700B8C40E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		CE2C917F24D3970000B8C40E /* VerticalGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE2C918124D43FE900B8C40E /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		CEB6459524BFB0C6001FBB5E /* ios10.7.TablesOnStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios10.7.TablesOnStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB6459824BFB0C6001FBB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB6459A24BFB0C6001FBB5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,10 +60,10 @@
 		CE2C915F24D3233500B8C40E /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C918124D43FE900B8C40E /* Setting.swift */,
 				CE2C916024D323FE00B8C40E /* SecondViewController.swift */,
 				CE2C917124D3641300B8C40E /* SettingCell01.swift */,
 				CE2C916824D35C1F00B8C40E /* SettingCell02.swift */,
-				CE2C916224D32B9D00B8C40E /* Setting.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -196,13 +196,13 @@
 				CEB6459D24BFB0C6001FBB5E /* ViewController.swift in Sources */,
 				CE2C917224D3641300B8C40E /* SettingCell01.swift in Sources */,
 				CE2C917824D3656000B8C40E /* ThreeViewController.swift in Sources */,
+				CE2C918224D43FE900B8C40E /* Setting.swift in Sources */,
 				CE2C918024D3970000B8C40E /* VerticalGalleryCollectionViewCell.swift in Sources */,
 				CEB645AE24BFB396001FBB5E /* Product.swift in Sources */,
 				CE2C917E24D37FA700B8C40E /* Food.swift in Sources */,
 				CE2C917C24D37E0700B8C40E /* HorizontalGalleryCollectionViewCell.swift in Sources */,
 				CE2C913924D2DF0700B8C40E /* ProductCell.swift in Sources */,
 				CE2C916924D35C1F00B8C40E /* SettingCell02.swift in Sources */,
-				CE2C916324D32B9D00B8C40E /* Setting.swift in Sources */,
 				CEB6459924BFB0C6001FBB5E /* AppDelegate.swift in Sources */,
 				CEB6459B24BFB0C6001FBB5E /* SceneDelegate.swift in Sources */,
 			);
@@ -351,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z2C4VQ9RF;
 				INFOPLIST_FILE = ios10.7.TablesOnStoryboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z2C4VQ9RF;
 				INFOPLIST_FILE = ios10.7.TablesOnStoryboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
