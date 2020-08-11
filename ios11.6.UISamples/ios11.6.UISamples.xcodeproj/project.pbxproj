@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE10FC1F24E2301E00A69C47 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10FC1E24E2301E00A69C47 /* View.swift */; };
 		CE1F945D24D83D9800780CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F945C24D83D9800780CCB /* AppDelegate.swift */; };
 		CE1F945F24D83D9800780CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F945E24D83D9800780CCB /* SceneDelegate.swift */; };
 		CE1F946124D83D9800780CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F946024D83D9800780CCB /* ViewController.swift */; };
@@ -14,11 +15,13 @@
 		CE1F946624D83D9900780CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1F946524D83D9900780CCB /* Assets.xcassets */; };
 		CE1F946924D83D9900780CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F946724D83D9900780CCB /* LaunchScreen.storyboard */; };
 		CE1F947124D83FCE00780CCB /* FirstButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F947024D83FCE00780CCB /* FirstButton.swift */; };
+		CE2D8BC024DB6A1800B80945 /* FirstCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D8BBF24DB6A1800B80945 /* FirstCustomButton.swift */; };
 		CE5DDF7224D89A2000A49394 /* SecondClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDF7124D89A2000A49394 /* SecondClockView.swift */; };
 		CED2CC2824D980B900016961 /* ThreeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2CC2724D980B900016961 /* ThreeSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE10FC1E24E2301E00A69C47 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CE1F945924D83D9800780CCB /* ios11.6.UISamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios11.6.UISamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1F945C24D83D9800780CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1F945E24D83D9800780CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		CE1F946824D83D9900780CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1F946A24D83D9900780CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1F947024D83FCE00780CCB /* FirstButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstButton.swift; sourceTree = "<group>"; };
+		CE2D8BBF24DB6A1800B80945 /* FirstCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCustomButton.swift; sourceTree = "<group>"; };
 		CE5DDF7124D89A2000A49394 /* SecondClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondClockView.swift; sourceTree = "<group>"; };
 		CED2CC2724D980B900016961 /* ThreeSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +50,7 @@
 		CE1F945024D83D9800780CCB = {
 			isa = PBXGroup;
 			children = (
+				CE10FC1E24E2301E00A69C47 /* View.swift */,
 				CE1F945B24D83D9800780CCB /* ios11.6.UISamples */,
 				CE1F945A24D83D9800780CCB /* Products */,
 			);
@@ -70,6 +75,7 @@
 				CE1F946724D83D9900780CCB /* LaunchScreen.storyboard */,
 				CE1F946A24D83D9900780CCB /* Info.plist */,
 				CE1F947024D83FCE00780CCB /* FirstButton.swift */,
+				CE2D8BBF24DB6A1800B80945 /* FirstCustomButton.swift */,
 				CE5DDF7124D89A2000A49394 /* SecondClockView.swift */,
 				CED2CC2724D980B900016961 /* ThreeSegmentedControl.swift */,
 			);
@@ -147,9 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE10FC1F24E2301E00A69C47 /* View.swift in Sources */,
 				CE1F947124D83FCE00780CCB /* FirstButton.swift in Sources */,
 				CED2CC2824D980B900016961 /* ThreeSegmentedControl.swift in Sources */,
 				CE5DDF7224D89A2000A49394 /* SecondClockView.swift in Sources */,
+				CE2D8BC024DB6A1800B80945 /* FirstCustomButton.swift in Sources */,
 				CE1F946124D83D9800780CCB /* ViewController.swift in Sources */,
 				CE1F945D24D83D9800780CCB /* AppDelegate.swift in Sources */,
 				CE1F945F24D83D9800780CCB /* SceneDelegate.swift in Sources */,

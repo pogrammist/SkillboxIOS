@@ -33,6 +33,7 @@ class SecondClockView: UIView {
         setHourLine(w: width, h: height)
         setMinuteLine(w: width, h: height)
         setSecondLine(w: width, h: height)
+        setShadow()
         
         if isSetuped { return }
         isSetuped = true
@@ -103,5 +104,14 @@ class SecondClockView: UIView {
         let angle = CGFloat.pi * 2 * (seconds / CGFloat(60))
         secLine.transform = CGAffineTransform(rotationAngle: angle)
         addSubview(secLine)
+    }
+    
+    func setShadow() {
+        layer.shadowColor   = UIColor.black.cgColor
+        layer.shadowOffset  = CGSize(width: 0.0, height: 0.0)
+        layer.shadowRadius  = 10
+        layer.shadowOpacity = 0.5
+        clipsToBounds       = true
+        layer.masksToBounds = false
     }
 }

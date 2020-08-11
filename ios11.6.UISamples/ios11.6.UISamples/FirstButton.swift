@@ -33,6 +33,12 @@ import UIKit
             self.layer.cornerRadius = self.cornerRadius
         }
     }
+    
+    @IBInspectable var titleText: String = "Button" {
+        didSet {
+            self.setTitle(titleText, for: .normal)
+        }
+    }
 
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -41,6 +47,7 @@ import UIKit
         self.layer.borderWidth = self.borderWidth
         self.layer.borderColor = self.borderColor.cgColor
         self.layer.cornerRadius = self.cornerRadius
+        self.setTitle(titleText, for: .normal)
         
         if isSetuped { return }
         isSetuped = true

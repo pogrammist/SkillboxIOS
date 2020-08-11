@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -23,49 +23,60 @@
                                     <constraint firstAttribute="height" constant="240" id="tCX-zw-12y"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-Tl-zxp" customClass="FirstButton" customModule="ios11_6_UISamples" customModuleProvider="target">
-                                <rect key="frame" x="184" y="444" width="100" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d0u-ui-3nQ" customClass="ThreeSegmentedControl" customModule="ios11_6_UISamples" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="524" width="139" height="32"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0q-vS-2HU" customClass="FirstCustomButton" customModule="ios11_6_UISamples" customModuleProvider="target">
+                                <rect key="frame" x="100" y="394" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="firstSegmentText" value="Первый"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="secondSegmentText" value="Второй"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="firstSegmentBackgroundColor">
-                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="secondSegmentBackgroundColor">
-                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="gfdgfdgdfgfd"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="useButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSP-mo-sZl"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSA-Mu-tPx" customClass="ThreeSegmentedControl" customModule="ios11_6_UISamples" customModuleProvider="target">
+                                <rect key="frame" x="87" y="477" width="240" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6sY-4k-DJq"/>
+                                    <constraint firstAttribute="width" constant="240" id="dk0-tq-Tkh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="one,two,three, four"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectorTextColor">
+                                        <color key="value" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </segmentedControl>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="d0u-ui-3nQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6gF-YO-Ydz"/>
-                            <constraint firstItem="d0u-ui-3nQ" firstAttribute="top" secondItem="Yhx-Tl-zxp" secondAttribute="bottom" constant="50" id="Lhh-TV-TjV"/>
+                            <constraint firstItem="G0q-vS-2HU" firstAttribute="top" secondItem="V3D-76-eYc" secondAttribute="bottom" constant="50" id="9aJ-go-3uD"/>
+                            <constraint firstItem="G0q-vS-2HU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AjJ-YD-HBa"/>
+                            <constraint firstItem="G0q-vS-2HU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ju0-0i-kda"/>
+                            <constraint firstItem="TSA-Mu-tPx" firstAttribute="top" secondItem="G0q-vS-2HU" secondAttribute="bottom" constant="50" id="Thf-89-lnc"/>
                             <constraint firstItem="V3D-76-eYc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="U8M-fS-5na"/>
-                            <constraint firstItem="Yhx-Tl-zxp" firstAttribute="top" secondItem="V3D-76-eYc" secondAttribute="bottom" constant="100" id="Z6c-Ba-59K"/>
                             <constraint firstItem="V3D-76-eYc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ3-T7-51N"/>
-                            <constraint firstItem="Yhx-Tl-zxp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wjW-xG-pSY"/>
+                            <constraint firstItem="TSA-Mu-tPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uck-EL-zJl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="G0q-vS-2HU" id="3Wi-VB-Je6"/>
+                        <outlet property="customSegmentControl" destination="TSA-Mu-tPx" id="Vf7-cP-hR6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>

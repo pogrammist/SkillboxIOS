@@ -9,12 +9,22 @@
 import UIKit
 
 @IBDesignable class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var button: FirstCustomButton!
+    @IBOutlet weak var customSegmentControl: ThreeSegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        customSegmentControl.delegate = self
     }
 
-
+    @IBAction func useButton(_ sender: FirstCustomButton) {
+        button.shake()
+    }
 }
 
+extension ViewController: ThreeSegmentedControlDelegate {
+    func presedSelectedItem(_ selectedItem: UIButton) {
+        print(selectedItem.titleLabel!)
+    }
+}
