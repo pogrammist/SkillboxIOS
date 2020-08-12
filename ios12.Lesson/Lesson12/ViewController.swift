@@ -46,6 +46,17 @@ extension ViewController: UITableViewDataSource{
         let cat = categories[indexPath.row]
         cell.nameLabel.text = cat.name
         cell.sortOrederLabel.text = "\(cat.sortOrder)"
+        let imageURL = cat.imageURL
+        guard let url = URL(string: imageURL) else { return cell }
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            print("Done!")
+            guard let data = data else { return }
+            DispatchQueue.main.async {
+                let image = UIImage(data: data)
+                cell.previewImageView.image = image
+            }
+        }
+        task.resume()
         return cell
     }
 }

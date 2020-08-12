@@ -19,8 +19,8 @@ class Category{
             let imageURL = data["image"] as? String else { return nil }
         self.name = name
         self.sortOrder = Int(sortOrder) ?? 0
-        self.imageURL = imageURL
+        let httpsPrefix: String = "https://blackstarshop.ru/"
+        self.imageURL = httpsPrefix + imageURL
     }
 }
-
 
