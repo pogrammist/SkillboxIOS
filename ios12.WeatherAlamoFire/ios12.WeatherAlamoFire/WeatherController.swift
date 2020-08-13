@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class WeatherController: UIViewController {
+    
+    @IBOutlet weak var weatherLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let loader = WeatherLoader()
+        
+        loader.loadWeather { weather in
+//            DispatchQueue.main.async {
+                if let weather = weather{
+                    self.weatherLabel.text = "\(weather)"}
+                else{self.weatherLabel.text = "Error"}
+//            }
+        }
     }
-
-
 }
 
