@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEDC8A1424E5E871001471F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC8A1324E5E871001471F2 /* AppDelegate.swift */; };
 		CEDC8A1624E5E871001471F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC8A1524E5E871001471F2 /* SceneDelegate.swift */; };
-		CEDC8A1824E5E871001471F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC8A1724E5E871001471F2 /* ViewController.swift */; };
+		CEDC8A1824E5E871001471F2 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC8A1724E5E871001471F2 /* AnimationViewController.swift */; };
 		CEDC8A1B24E5E871001471F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC8A1924E5E871001471F2 /* Main.storyboard */; };
 		CEDC8A1D24E5E872001471F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC8A1C24E5E872001471F2 /* Assets.xcassets */; };
 		CEDC8A2024E5E872001471F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC8A1E24E5E872001471F2 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		CEDC8A1024E5E871001471F2 /* ios13.5.Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios13.5.Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC8A1324E5E871001471F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC8A1524E5E871001471F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEDC8A1724E5E871001471F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEDC8A1724E5E871001471F2 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		CEDC8A1A24E5E871001471F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDC8A1C24E5E872001471F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDC8A1F24E5E872001471F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				CEDC8A1324E5E871001471F2 /* AppDelegate.swift */,
 				CEDC8A1524E5E871001471F2 /* SceneDelegate.swift */,
-				CEDC8A1724E5E871001471F2 /* ViewController.swift */,
+				CEDC8A1724E5E871001471F2 /* AnimationViewController.swift */,
 				CEDC8A1924E5E871001471F2 /* Main.storyboard */,
 				CEDC8A1C24E5E872001471F2 /* Assets.xcassets */,
 				CEDC8A1E24E5E872001471F2 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDC8A1824E5E871001471F2 /* ViewController.swift in Sources */,
+				CEDC8A1824E5E871001471F2 /* AnimationViewController.swift in Sources */,
 				CEDC8A1424E5E871001471F2 /* AppDelegate.swift in Sources */,
 				CEDC8A1624E5E871001471F2 /* SceneDelegate.swift in Sources */,
 			);
