@@ -22,7 +22,7 @@ class RealmViewController: UIViewController {
     
     @IBAction func addTask(_ sender: Any) {
         let newTask = RealmEntity()
-        newTask.title = RealmPersistence.storage.tasks.count + 1
+        newTask.title = (RealmPersistence.storage.tasks.last?.title ?? 0) + 1
         RealmPersistence.storage.addTask(task: newTask)
         realmTableView.reloadData()
     }
@@ -39,6 +39,16 @@ extension RealmViewController: UITableViewDataSource {
         cell.delegate = self
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                let toDrop = RealmPersistence.storage.tasks[indexPath.row]
+                RealmPersistence.storage.dropTask(task: toDrop)
+                realmTableView.deleteRows(at: [indexPath], with: .fade)
+            } else if editingStyle == .insert {
+                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+        }
 }
 
 extension RealmViewController: UITableViewDelegate {

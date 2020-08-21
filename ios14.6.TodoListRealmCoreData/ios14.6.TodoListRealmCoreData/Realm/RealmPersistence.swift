@@ -33,5 +33,11 @@ class RealmPersistence {
         try! realm.write {
             task.note = note
         }
-    }    
+    }
+    
+    func dropTask(task: RealmEntity) {
+        try! realm.write {
+            realm.delete(task)
+        }
+    }
 }
