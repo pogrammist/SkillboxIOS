@@ -10,7 +10,7 @@ import RealmSwift
 
 class RealmEntity: Object {
     @objc dynamic var title = Int()
-    @objc dynamic var date = NSDate()
+    @objc dynamic var date = Date()
     @objc dynamic var note = String()
     @objc dynamic var isCompleted = false
 }

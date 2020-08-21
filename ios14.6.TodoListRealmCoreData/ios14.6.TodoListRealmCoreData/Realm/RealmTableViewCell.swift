@@ -24,7 +24,7 @@ class RealmTableViewCell: UITableViewCell {
         didSet {
             guard let task = task else { return }
             titleLabel.text = "Task \(task.title)"
-            dateLabel.text = task.date.description
+            dateLabel.text = task.date.formattedISO8601
             noteTextField.text = task.note
             if task.isCompleted {
                 hideTask()
@@ -38,10 +38,10 @@ class RealmTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -49,7 +49,7 @@ class RealmTableViewCell: UITableViewCell {
         super.layoutSubviews()
         doneButton.layer.cornerRadius = doneButton.frame.width / 2
     }
-
+    
     @IBAction func setCompliteTask(_ sender: Any) {
         delegate?.setComplite(task: task!)
     }
@@ -69,5 +69,20 @@ class RealmTableViewCell: UITableViewCell {
         noteTextField.isEnabled = true
         doneButton.backgroundColor = .systemBlue
         backgroundColor = .systemOrange
+    }
+}
+
+extension Date {
+    static let formatterISO8601: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.locale = Locale.current
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+    
+    var formattedISO8601: String {
+        return Date.formatterISO8601.string(from: self)
     }
 }
