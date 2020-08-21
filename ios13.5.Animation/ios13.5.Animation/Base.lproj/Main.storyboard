@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnimationViewController" customModule="ios13_5_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2Y-4t-1yG">
+                                <rect key="frame" x="107" y="298" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8xf-kd-w8j"/>
+                                    <constraint firstAttribute="width" secondItem="e2Y-4t-1yG" secondAttribute="height" multiplier="1:1" id="V1N-XS-a3U"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oXT-jF-fgo">
+                                <rect key="frame" x="50" y="812" width="314" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tk-Pp-oDc">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                                        <state key="normal" title="Prev"/>
+                                        <connections>
+                                            <action selector="previousAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qv7-wu-nB0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-ik-8fd">
+                                        <rect key="frame" x="105.5" y="0.0" width="103" height="50"/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="runCurrentAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUq-bE-rBU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pT4-bc-yrH">
+                                        <rect key="frame" x="210.5" y="0.0" width="103.5" height="50"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="nextAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pjh-r2-qm4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lMc-EA-cZW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oXT-jF-fgo" secondAttribute="trailing" constant="50" id="GG3-bj-afh"/>
+                            <constraint firstItem="e2Y-4t-1yG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="awo-44-MgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oXT-jF-fgo" secondAttribute="bottom" id="k9h-Vd-eZa"/>
+                            <constraint firstItem="e2Y-4t-1yG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQg-Pd-sT8"/>
+                            <constraint firstItem="oXT-jF-fgo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="vqR-4A-XQL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentAnimationButton" destination="9gw-ik-8fd" id="Sxo-et-LyR"/>
+                        <outlet property="redBox" destination="e2Y-4t-1yG" id="k9F-r0-KoQ"/>
+                        <outlet property="widthLayoutConstraint" destination="8xf-kd-w8j" id="f0z-wF-SZ0"/>
+                        <outlet property="xLayoutConstraint" destination="lQg-Pd-sT8" id="FxT-fq-rWm"/>
+                        <outlet property="yLayoutConstraint" destination="awo-44-MgV" id="339-kD-BFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+</document>

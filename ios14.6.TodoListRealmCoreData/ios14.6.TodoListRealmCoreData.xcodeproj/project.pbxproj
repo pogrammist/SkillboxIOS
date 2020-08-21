@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE16F24EB69DE0016864F /* AppDelegate.swift */; };
+		CE8AE17224EB69DE0016864F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17124EB69DE0016864F /* SceneDelegate.swift */; };
+		CE8AE17724EB69DE0016864F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17524EB69DE0016864F /* Main.storyboard */; };
+		CE8AE17A24EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */; };
+		CE8AE17C24EB69E10016864F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17B24EB69E10016864F /* Assets.xcassets */; };
+		CE8AE17F24EB69E10016864F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17D24EB69E10016864F /* LaunchScreen.storyboard */; };
+		CEA0C8C324ED34410029D73F /* libPods-ios14.6.TodoListRealmCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */; };
+		CEE36D4124EB6EE3009D27F4 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */; };
+		CEE36D4324EB7195009D27F4 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE36D4224EB7195009D27F4 /* Persistance.swift */; };
+		CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355724EBBB5600BCF71E /* RealmViewController.swift */; };
+		CEE6355A24EBBCCA00BCF71E /* RealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */; };
+		CEE6355C24EBC05300BCF71E /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */; };
+		CEF1E70124EF0F4100861E67 /* RealmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; sourceTree = "<group>"; };
+		93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; sourceTree = "<group>"; };
+		9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8AE16C24EB69DE0016864F /* ios14.6.TodoListRealmCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios14.6.TodoListRealmCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8AE16F24EB69DE0016864F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE8AE17124EB69DE0016864F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE8AE17624EB69DE0016864F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE8AE17924EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios14_6_TodoListRealmCoreData.xcdatamodel; sourceTree = "<group>"; };
+		CE8AE17B24EB69E10016864F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8AE17E24EB69E10016864F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE8AE18024EB69E10016864F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA0C89E24ED31DB0029D73F /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C89F24ED31DB0029D73F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8A824ED32490029D73F /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8AE24ED326D0029D73F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8B424ED32DE0029D73F /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8B824ED32E10029D73F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8BF24ED34310029D73F /* libRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA0C8C024ED34310029D73F /* libRealmSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealmSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		CEE36D4224EB7195009D27F4 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		CEE6355724EBBB5600BCF71E /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmViewController.swift; sourceTree = SOURCE_ROOT; };
+		CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmEntity.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmEntity.swift; sourceTree = SOURCE_ROOT; };
+		CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmPersistence.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmPersistence.swift; sourceTree = SOURCE_ROOT; };
+		CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmTableViewCell.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios14.6.TodoListRealmCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8AE16924EB69DE0016864F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA0C8C324ED34410029D73F /* libPods-ios14.6.TodoListRealmCoreData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C957209A4E346CFA20FC61D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */,
+				0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEDBED10524F7253D3EFB2D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0C8BF24ED34310029D73F /* libRealm.a */,
+				CEA0C8C024ED34310029D73F /* libRealmSwift.a */,
+				CEA0C8B824ED32E10029D73F /* RealmSwift.framework */,
+				CEA0C8B424ED32DE0029D73F /* Realm.framework */,
+				CEA0C8AE24ED326D0029D73F /* RealmSwift.framework */,
+				CEA0C8A824ED32490029D73F /* Realm.framework */,
+				CEA0C89E24ED31DB0029D73F /* Realm.framework */,
+				CEA0C89F24ED31DB0029D73F /* RealmSwift.framework */,
+				FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0AC2D724EBBA6D007C7FC6 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CEE36D4224EB7195009D27F4 /* Persistance.swift */,
+				CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		CE0AC2D824EBBAAD007C7FC6 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */,
+				CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */,
+				CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */,
+				CEE6355724EBBB5600BCF71E /* RealmViewController.swift */,
+			);
+			name = Realm;
+			path = UserDefaults/Realm;
+			sourceTree = "<group>";
+		};
+		CE0AC2D924EBBAB7007C7FC6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CE8AE16324EB69DE0016864F = {
+			isa = PBXGroup;
+			children = (
+				CE8AE16E24EB69DE0016864F /* ios14.6.TodoListRealmCoreData */,
+				CE8AE16D24EB69DE0016864F /* Products */,
+				6C957209A4E346CFA20FC61D /* Pods */,
+				BEDBED10524F7253D3EFB2D8 /* Frameworks */,
+				CEA0C8BE24ED33AE0029D73F /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8AE16D24EB69DE0016864F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8AE16C24EB69DE0016864F /* ios14.6.TodoListRealmCoreData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8AE16E24EB69DE0016864F /* ios14.6.TodoListRealmCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AC2D724EBBA6D007C7FC6 /* UserDefaults */,
+				CE0AC2D824EBBAAD007C7FC6 /* Realm */,
+				CE0AC2D924EBBAB7007C7FC6 /* CoreData */,
+				CE8AE16F24EB69DE0016864F /* AppDelegate.swift */,
+				CE8AE17124EB69DE0016864F /* SceneDelegate.swift */,
+				CE8AE17524EB69DE0016864F /* Main.storyboard */,
+				CE8AE17B24EB69E10016864F /* Assets.xcassets */,
+				CE8AE17D24EB69E10016864F /* LaunchScreen.storyboard */,
+				CE8AE18024EB69E10016864F /* Info.plist */,
+			);
+			path = ios14.6.TodoListRealmCoreData;
+			sourceTree = "<group>";
+		};
+		CEA0C8BE24ED33AE0029D73F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8AE16B24EB69DE0016864F /* ios14.6.TodoListRealmCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8AE18324EB69E10016864F /* Build configuration list for PBXNativeTarget "ios14.6.TodoListRealmCoreData" */;
+			buildPhases = (
+				4FA69CB738FCAB32F9D2BE54 /* [CP] Check Pods Manifest.lock */,
+				CE8AE16824EB69DE0016864F /* Sources */,
+				CE8AE16924EB69DE0016864F /* Frameworks */,
+				CE8AE16A24EB69DE0016864F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios14.6.TodoListRealmCoreData;
+			productName = ios14.6.TodoListRealmCoreData;
+			productReference = CE8AE16C24EB69DE0016864F /* ios14.6.TodoListRealmCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8AE16424EB69DE0016864F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE8AE16B24EB69DE0016864F = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = CE8AE16724EB69DE0016864F /* Build configuration list for PBXProject "ios14.6.TodoListRealmCoreData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE8AE16324EB69DE0016864F;
+			productRefGroup = CE8AE16D24EB69DE0016864F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8AE16B24EB69DE0016864F /* ios14.6.TodoListRealmCoreData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8AE16A24EB69DE0016864F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8AE17F24EB69E10016864F /* LaunchScreen.storyboard in Resources */,
+				CE8AE17C24EB69E10016864F /* Assets.xcassets in Resources */,
+				CE8AE17724EB69DE0016864F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FA69CB738FCAB32F9D2BE54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios14.6.TodoListRealmCoreData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8AE16824EB69DE0016864F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */,
+				CE8AE17A24EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld in Sources */,
+				CEE36D4124EB6EE3009D27F4 /* UserDefaultsViewController.swift in Sources */,
+				CEE6355A24EBBCCA00BCF71E /* RealmEntity.swift in Sources */,
+				CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */,
+				CE8AE17224EB69DE0016864F /* SceneDelegate.swift in Sources */,
+				CEE36D4324EB7195009D27F4 /* Persistance.swift in Sources */,
+				CEE6355C24EBC05300BCF71E /* RealmPersistence.swift in Sources */,
+				CEF1E70124EF0F4100861E67 /* RealmTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE8AE17524EB69DE0016864F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8AE17624EB69DE0016864F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE8AE17D24EB69E10016864F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8AE17E24EB69E10016864F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8AE18124EB69E10016864F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE8AE18224EB69E10016864F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE8AE18424EB69E10016864F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z2C4VQ9RF;
+				INFOPLIST_FILE = ios14.6.TodoListRealmCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user.ios14-6-TodoListRealmCoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8AE18524EB69E10016864F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z2C4VQ9RF;
+				INFOPLIST_FILE = ios14.6.TodoListRealmCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "user.ios14-6-TodoListRealmCoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE8AE16724EB69DE0016864F /* Build configuration list for PBXProject "ios14.6.TodoListRealmCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8AE18124EB69E10016864F /* Debug */,
+				CE8AE18224EB69E10016864F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8AE18324EB69E10016864F /* Build configuration list for PBXNativeTarget "ios14.6.TodoListRealmCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8AE18424EB69E10016864F /* Debug */,
+				CE8AE18524EB69E10016864F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE8AE17924EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodel */,
+			);
+			currentVersion = CE8AE17924EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodel */;
+			path = ios14_6_TodoListRealmCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE8AE16424EB69DE0016864F /* Project object */;
+}
