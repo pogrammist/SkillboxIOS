@@ -16,6 +16,7 @@ class RealmViewController: UIViewController {
         super.viewDidLoad()
         
         realmTableView.dataSource = self
+        realmTableView.keyboardDismissMode = .onDrag
         
     }
     
@@ -37,6 +38,14 @@ extension RealmViewController: UITableViewDataSource {
         cell.task = RealmPersistence.storage.tasks[indexPath.row]
         cell.delegate = self
         return cell
+    }
+}
+
+extension RealmViewController: UITableViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !realmTableView.isDecelerating {
+            view.endEditing(true)
+        }
     }
 }
 
