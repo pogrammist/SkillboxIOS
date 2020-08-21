@@ -9,7 +9,7 @@
 import UIKit
 
 class RealmViewController: UIViewController {
-
+    
     @IBOutlet weak var realmTableView: UITableView!
     
     override func viewDidLoad() {
@@ -41,14 +41,14 @@ extension RealmViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-            if editingStyle == .delete {
-                let toDrop = RealmPersistence.storage.tasks[indexPath.row]
-                RealmPersistence.storage.dropTask(task: toDrop)
-                realmTableView.deleteRows(at: [indexPath], with: .fade)
-            } else if editingStyle == .insert {
-                // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        if editingStyle == .delete {
+            let toDrop = RealmPersistence.storage.tasks[indexPath.row]
+            RealmPersistence.storage.dropTask(task: toDrop)
+            realmTableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
-        }
+    }
 }
 
 extension RealmViewController: UITableViewDelegate {
