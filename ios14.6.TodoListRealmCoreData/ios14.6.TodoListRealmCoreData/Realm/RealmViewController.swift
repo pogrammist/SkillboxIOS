@@ -35,7 +35,19 @@ extension RealmViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = realmTableView.dequeueReusableCell(withIdentifier: "RealmCell", for: indexPath) as! RealmTableViewCell
         cell.task = RealmPersistence.storage.tasks[indexPath.row]
+        cell.delegate = self
         return cell
     }
 }
 
+extension RealmViewController: RealmTableViewCellDelegate {
+    func setComplite(task: RealmEntity) {
+        RealmPersistence.storage.compiteTask(task: task)
+        realmTableView.reloadData()
+    }
+    
+    func setNote(task: RealmEntity, note: String) {
+        RealmPersistence.storage.noteTask(task: task, note: note)
+        realmTableView.reloadData()
+    }
+}

@@ -95,7 +95,7 @@
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="✓"/>
                                                     <connections>
-                                                        <action selector="setCompliteTask:" destination="pwX-mD-oLb" eventType="touchUpInside" id="Lm7-dY-sBJ"/>
+                                                        <action selector="setCompliteTask:" destination="pwX-mD-oLb" eventType="touchUpInside" id="rDN-xt-NcC"/>
                                                     </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuf-hB-ru2">
@@ -103,7 +103,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="setNoteTask:" destination="pwX-mD-oLb" eventType="editingDidEnd" id="73J-wT-bcB"/>
+                                                        <action selector="setNoteTask:" destination="pwX-mD-oLb" eventType="editingDidEnd" id="KGV-jy-acq"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>

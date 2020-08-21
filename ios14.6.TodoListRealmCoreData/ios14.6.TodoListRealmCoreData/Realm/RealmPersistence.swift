@@ -22,16 +22,16 @@ class RealmPersistence {
             realm.add(task)
         }
     }
-
-//    func changeTask(task: RealmEntity, description descriptionInput: String? = nil, isComplited isComplitedInput: Bool? = nil) {
-//        let description: String = descriptionInput ?? task.notes
-//        let isComplited: Bool = isComplitedInput ?? task.isCompleted
-//        
-//        try! realm.write {
-//            task.notes = description
-//            task.isCompleted = isComplited
-//        }
-//    }
-
     
+    func compiteTask(task: RealmEntity) {
+        try! realm.write {
+            task.isCompleted = !task.isCompleted
+        }
+    }
+    
+    func noteTask(task: RealmEntity, note: String) {
+        try! realm.write {
+            task.note = note
+        }
+    }    
 }
