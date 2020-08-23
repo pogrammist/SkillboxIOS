@@ -10,10 +10,13 @@
 		CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE16F24EB69DE0016864F /* AppDelegate.swift */; };
 		CE8AE17224EB69DE0016864F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17124EB69DE0016864F /* SceneDelegate.swift */; };
 		CE8AE17724EB69DE0016864F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17524EB69DE0016864F /* Main.storyboard */; };
-		CE8AE17A24EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */; };
+		CE8AE17A24EB69DE0016864F /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17824EB69DE0016864F /* CoreDataModel.xcdatamodeld */; };
 		CE8AE17C24EB69E10016864F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17B24EB69E10016864F /* Assets.xcassets */; };
 		CE8AE17F24EB69E10016864F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17D24EB69E10016864F /* LaunchScreen.storyboard */; };
 		CEA0C8C324ED34410029D73F /* libPods-ios14.6.TodoListRealmCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */; };
+		CEAED4F824EFB0570014941A /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F524EFB0570014941A /* CoreDataViewController.swift */; };
+		CEAED4F924EFB0570014941A /* CoreDataPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F624EFB0570014941A /* CoreDataPersistent.swift */; };
+		CEAED4FA24EFB0570014941A /* CoreDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F724EFB0570014941A /* CoreDataTableViewCell.swift */; };
 		CEE36D4124EB6EE3009D27F4 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */; };
 		CEE36D4324EB7195009D27F4 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE36D4224EB7195009D27F4 /* Persistance.swift */; };
 		CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355724EBBB5600BCF71E /* RealmViewController.swift */; };
@@ -42,6 +45,9 @@
 		CEA0C8B824ED32E10029D73F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA0C8BF24ED34310029D73F /* libRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA0C8C024ED34310029D73F /* libRealmSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealmSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAED4F524EFB0570014941A /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		CEAED4F624EFB0570014941A /* CoreDataPersistent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistent.swift; sourceTree = "<group>"; };
+		CEAED4F724EFB0570014941A /* CoreDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewCell.swift; sourceTree = "<group>"; };
 		CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
 		CEE36D4224EB7195009D27F4 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		CEE6355724EBBB5600BCF71E /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -112,7 +118,10 @@
 		CE0AC2D924EBBAB7007C7FC6 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */,
+				CEAED4F624EFB0570014941A /* CoreDataPersistent.swift */,
+				CEAED4F724EFB0570014941A /* CoreDataTableViewCell.swift */,
+				CEAED4F524EFB0570014941A /* CoreDataViewController.swift */,
+				CE8AE17824EB69DE0016864F /* CoreDataModel.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -257,9 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAED4FA24EFB0570014941A /* CoreDataTableViewCell.swift in Sources */,
 				CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */,
-				CE8AE17A24EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld in Sources */,
+				CEAED4F924EFB0570014941A /* CoreDataPersistent.swift in Sources */,
+				CE8AE17A24EB69DE0016864F /* CoreDataModel.xcdatamodeld in Sources */,
 				CEE36D4124EB6EE3009D27F4 /* UserDefaultsViewController.swift in Sources */,
+				CEAED4F824EFB0570014941A /* CoreDataViewController.swift in Sources */,
 				CEE6355A24EBBCCA00BCF71E /* RealmEntity.swift in Sources */,
 				CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */,
 				CE8AE17224EB69DE0016864F /* SceneDelegate.swift in Sources */,
@@ -469,13 +481,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE8AE17824EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodeld */ = {
+		CE8AE17824EB69DE0016864F /* CoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				CE8AE17924EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodel */,
 			);
 			currentVersion = CE8AE17924EB69DE0016864F /* ios14_6_TodoListRealmCoreData.xcdatamodel */;
-			path = ios14_6_TodoListRealmCoreData.xcdatamodeld;
+			path = CoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

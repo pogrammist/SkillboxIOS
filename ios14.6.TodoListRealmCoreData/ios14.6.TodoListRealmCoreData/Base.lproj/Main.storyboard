@@ -160,16 +160,16 @@
         <!--CoreData-->
         <scene sceneID="NQd-zg-Qin">
             <objects>
-                <viewController id="HdP-Q4-TPj" sceneMemberID="viewController">
+                <viewController id="HdP-Q4-TPj" customClass="CoreDataViewController" customModule="ios14_6_TodoListRealmCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gd0-ye-ST9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zXv-y1-rY4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoreDataCell" id="G4a-Gn-Nvc" customClass="RealmTableViewCell" customModule="ios14_6_TodoListRealmCoreData" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoreDataCell" id="G4a-Gn-Nvc" customClass="CoreDataTableViewCell" customModule="ios14_6_TodoListRealmCoreData" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G4a-Gn-Nvc" id="FJz-9X-knB">
@@ -239,24 +239,27 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ice-ex-amo" firstAttribute="bottom" secondItem="zXv-y1-rY4" secondAttribute="bottom" id="6Qs-rL-ydE"/>
-                            <constraint firstItem="zXv-y1-rY4" firstAttribute="leading" secondItem="ice-ex-amo" secondAttribute="leading" id="QDg-Mn-YDp"/>
-                            <constraint firstItem="zXv-y1-rY4" firstAttribute="top" secondItem="Gd0-ye-ST9" secondAttribute="top" id="UwR-zX-uDR"/>
-                            <constraint firstItem="zXv-y1-rY4" firstAttribute="trailing" secondItem="ice-ex-amo" secondAttribute="trailing" id="idf-1Q-ZqU"/>
+                            <constraint firstItem="ice-ex-amo" firstAttribute="bottom" secondItem="zXv-y1-rY4" secondAttribute="bottom" id="PUT-ah-LsS"/>
+                            <constraint firstItem="zXv-y1-rY4" firstAttribute="trailing" secondItem="ice-ex-amo" secondAttribute="trailing" id="TUS-lZ-1yk"/>
+                            <constraint firstItem="zXv-y1-rY4" firstAttribute="top" secondItem="ice-ex-amo" secondAttribute="top" id="lqx-vq-xWy"/>
+                            <constraint firstItem="zXv-y1-rY4" firstAttribute="leading" secondItem="ice-ex-amo" secondAttribute="leading" id="tlR-Oe-vBN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ice-ex-amo"/>
                     </view>
                     <navigationItem key="navigationItem" title="CoreData" id="WAH-jX-BfN">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Ejn-Z7-8Kp">
                             <connections>
-                                <action selector="addTask:" destination="rnX-I2-bpI" id="yjz-AQ-Eev"/>
+                                <action selector="addTask:" destination="HdP-Q4-TPj" id="bUW-S8-Qzj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="coreDataTableView" destination="zXv-y1-rY4" id="sjx-H9-2ZM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdI-oy-12S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="1552"/>
+            <point key="canvasLocation" x="1953.6231884057972" y="1551.5625"/>
         </scene>
         <!--UserDefaults-->
         <scene sceneID="mBP-3f-OH1">
