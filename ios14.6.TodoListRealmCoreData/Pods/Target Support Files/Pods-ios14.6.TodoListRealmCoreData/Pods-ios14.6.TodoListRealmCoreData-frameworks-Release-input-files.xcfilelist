@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
 ${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework

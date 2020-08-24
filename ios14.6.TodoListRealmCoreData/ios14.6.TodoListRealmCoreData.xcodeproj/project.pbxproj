@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C14D5CEFC345D6658CF67896 /* Pods_ios14_6_TodoListRealmCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */; };
+		CE7FF10824F3930700585A74 /* WeatherDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */; };
+		CE7FF10924F3930700585A74 /* WeatherDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10424F3930700585A74 /* WeatherDetailController.swift */; };
+		CE7FF10A24F3930700585A74 /* WeatherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10524F3930700585A74 /* WeatherLoader.swift */; };
+		CE7FF10B24F3930700585A74 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10624F3930700585A74 /* WeatherController.swift */; };
+		CE7FF10C24F3930700585A74 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10724F3930700585A74 /* Weather.swift */; };
 		CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE16F24EB69DE0016864F /* AppDelegate.swift */; };
 		CE8AE17224EB69DE0016864F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17124EB69DE0016864F /* SceneDelegate.swift */; };
 		CE8AE17724EB69DE0016864F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17524EB69DE0016864F /* Main.storyboard */; };
 		CE8AE17A24EB69DE0016864F /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8AE17824EB69DE0016864F /* CoreDataModel.xcdatamodeld */; };
 		CE8AE17C24EB69E10016864F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17B24EB69E10016864F /* Assets.xcassets */; };
 		CE8AE17F24EB69E10016864F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8AE17D24EB69E10016864F /* LaunchScreen.storyboard */; };
-		CEA0C8C324ED34410029D73F /* libPods-ios14.6.TodoListRealmCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */; };
 		CEAED4F824EFB0570014941A /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F524EFB0570014941A /* CoreDataViewController.swift */; };
 		CEAED4F924EFB0570014941A /* CoreDataPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F624EFB0570014941A /* CoreDataPersistent.swift */; };
 		CEAED4FA24EFB0570014941A /* CoreDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAED4F724EFB0570014941A /* CoreDataTableViewCell.swift */; };
@@ -26,9 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CE7FF10424F3930700585A74 /* WeatherDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailController.swift; sourceTree = "<group>"; };
+		CE7FF10524F3930700585A74 /* WeatherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLoader.swift; sourceTree = "<group>"; };
+		CE7FF10624F3930700585A74 /* WeatherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		CE7FF10724F3930700585A74 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		CE8AE16C24EB69DE0016864F /* ios14.6.TodoListRealmCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios14.6.TodoListRealmCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8AE16F24EB69DE0016864F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8AE17124EB69DE0016864F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +65,6 @@
 		CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmEntity.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmEntity.swift; sourceTree = SOURCE_ROOT; };
 		CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmPersistence.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmPersistence.swift; sourceTree = SOURCE_ROOT; };
 		CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmTableViewCell.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios14.6.TodoListRealmCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA0C8C324ED34410029D73F /* libPods-ios14.6.TodoListRealmCoreData.a in Frameworks */,
+				C14D5CEFC345D6658CF67896 /* Pods_ios14_6_TodoListRealmCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +99,7 @@
 				CEA0C8A824ED32490029D73F /* Realm.framework */,
 				CEA0C89E24ED31DB0029D73F /* Realm.framework */,
 				CEA0C89F24ED31DB0029D73F /* RealmSwift.framework */,
-				FED7944F16613E339DEBD541 /* libPods-ios14.6.TodoListRealmCoreData.a */,
+				0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +136,18 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		CE7FF10224F391E400585A74 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FF10724F3930700585A74 /* Weather.swift */,
+				CE7FF10624F3930700585A74 /* WeatherController.swift */,
+				CE7FF10424F3930700585A74 /* WeatherDetailController.swift */,
+				CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */,
+				CE7FF10524F3930700585A74 /* WeatherLoader.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
 		CE8AE16324EB69DE0016864F = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,7 @@
 		CE8AE16E24EB69DE0016864F /* ios14.6.TodoListRealmCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				CE7FF10224F391E400585A74 /* Weather */,
 				CE0AC2D724EBBA6D007C7FC6 /* UserDefaults */,
 				CE0AC2D824EBBAAD007C7FC6 /* Realm */,
 				CE0AC2D924EBBAB7007C7FC6 /* CoreData */,
@@ -180,6 +203,7 @@
 				CE8AE16824EB69DE0016864F /* Sources */,
 				CE8AE16924EB69DE0016864F /* Frameworks */,
 				CE8AE16A24EB69DE0016864F /* Resources */,
+				EE7485FE0A04588B10896EFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +283,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE7485FE0A04588B10896EFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,10 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAED4FA24EFB0570014941A /* CoreDataTableViewCell.swift in Sources */,
+				CE7FF10C24F3930700585A74 /* Weather.swift in Sources */,
 				CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */,
 				CEAED4F924EFB0570014941A /* CoreDataPersistent.swift in Sources */,
 				CE8AE17A24EB69DE0016864F /* CoreDataModel.xcdatamodeld in Sources */,
+				CE7FF10824F3930700585A74 /* WeatherDetailTableViewCell.swift in Sources */,
+				CE7FF10924F3930700585A74 /* WeatherDetailController.swift in Sources */,
+				CE7FF10B24F3930700585A74 /* WeatherController.swift in Sources */,
 				CEE36D4124EB6EE3009D27F4 /* UserDefaultsViewController.swift in Sources */,
+				CE7FF10A24F3930700585A74 /* WeatherLoader.swift in Sources */,
 				CEAED4F824EFB0570014941A /* CoreDataViewController.swift in Sources */,
 				CEE6355A24EBBCCA00BCF71E /* RealmEntity.swift in Sources */,
 				CE8AE17024EB69DE0016864F /* AppDelegate.swift in Sources */,
