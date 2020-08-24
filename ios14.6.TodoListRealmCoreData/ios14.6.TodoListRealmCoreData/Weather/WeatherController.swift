@@ -29,7 +29,6 @@ class WeatherController: UIViewController {
                 self.weatherLabel.textColor = .black
             } else {
                 self.weatherLabel.text = "Error"
-                
             }
         }
     }

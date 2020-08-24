@@ -27,7 +27,7 @@ class WeatherLoader {
                 let currentWeather = Weather()
                 currentWeather.humidity = currentHumidity
                 currentWeather.pressure = currentPressure
-                currentWeather.temp = currentTempCels
+                currentWeather.temp = WeatherLoader.convertToCelsius(fahrenheit: currentTempCels)
                 
                 DispatchQueue.main.async {
                     SVProgressHUD.dismiss()
