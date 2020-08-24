@@ -16,12 +16,21 @@ class WeatherController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loader = WeatherLoader()
+        if let realmWeather = WeatherRealmPersistent.storage.weather {
+            weatherLabel.text = "Sometime in Moscow:\n" +
+                "Humidity: \(realmWeather.humidity)\n" + "Temperature: \(realmWeather.temp)ºC\n" + "Pressure: \(realmWeather.pressure)"
+            weatherLabel.textColor = .red
+        }
         
+        let loader = WeatherLoader()
         loader.loadWeather { weather in
-            if let weather = weather{
-                self.weatherLabel.text = "\(weather)"}
-            else{self.weatherLabel.text = "Error"}
+            if let weather = weather {
+                self.weatherLabel.text = "\(weather)"
+                self.weatherLabel.textColor = .black
+            } else {
+                self.weatherLabel.text = "Error"
+                
+            }
         }
     }
 }

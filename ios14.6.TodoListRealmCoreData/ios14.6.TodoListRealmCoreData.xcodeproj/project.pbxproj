@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C14D5CEFC345D6658CF67896 /* Pods_ios14_6_TodoListRealmCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */; };
+		CE65C55824F3B5B700FE76F9 /* WeatherRealmPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C55724F3B5B700FE76F9 /* WeatherRealmPersistent.swift */; };
 		CE7FF10824F3930700585A74 /* WeatherDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */; };
 		CE7FF10924F3930700585A74 /* WeatherDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10424F3930700585A74 /* WeatherDetailController.swift */; };
 		CE7FF10A24F3930700585A74 /* WeatherLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10524F3930700585A74 /* WeatherLoader.swift */; };
@@ -35,6 +36,7 @@
 		0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE65C55724F3B5B700FE76F9 /* WeatherRealmPersistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealmPersistent.swift; sourceTree = "<group>"; };
 		CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CE7FF10424F3930700585A74 /* WeatherDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailController.swift; sourceTree = "<group>"; };
 		CE7FF10524F3930700585A74 /* WeatherLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLoader.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				CE7FF10424F3930700585A74 /* WeatherDetailController.swift */,
 				CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */,
 				CE7FF10524F3930700585A74 /* WeatherLoader.swift */,
+				CE65C55724F3B5B700FE76F9 /* WeatherRealmPersistent.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */,
 				CEAED4F924EFB0570014941A /* CoreDataPersistent.swift in Sources */,
 				CE8AE17A24EB69DE0016864F /* CoreDataModel.xcdatamodeld in Sources */,
+				CE65C55824F3B5B700FE76F9 /* WeatherRealmPersistent.swift in Sources */,
 				CE7FF10824F3930700585A74 /* WeatherDetailTableViewCell.swift in Sources */,
 				CE7FF10924F3930700585A74 /* WeatherDetailController.swift in Sources */,
 				CE7FF10B24F3930700585A74 /* WeatherController.swift in Sources */,
