@@ -13,27 +13,30 @@ class WeatherRealmPersistent {
     
     private let realm = try! Realm()
     
-    var weather: Weather? {
-        return realm.objects(Weather.self).first
+    var weather: WeatherMain? {
+        return realm.objects(WeatherMain.self).first
     }
     
-//    var weathers: [WeatherDetail]? {
-//        return realm.objects(WeatherDetail.self).map{ $0 }
-//    }
+    var weathers: [WeatherDetail] {
+        var weathers: [WeatherDetail] = []
+        for weather in realm.objects(WeatherDetail.self) {
+            weathers.append(weather)
+        }
+        return weathers
+    }
     
-    func addWeather(weather: Weather) {
+    func addWeather(weather: WeatherMain) {
         try! realm.write {
             realm.deleteAll()
             realm.add(weather)
         }
     }
     
-//    func addWeatherDetail(weathers: [WeatherDetail]) {
-//        try! realm.write {
-//            weathers.map {
-//                realm.deleteAll()
-//                realm.add( $0 )
-//            }
-//        }
-//    }
+    func addWeatherDetail(weathers: [WeatherDetail]) {
+        try! realm.write {
+            weathers.map {
+                realm.add( $0 )
+            }
+        }
+    }
 }
