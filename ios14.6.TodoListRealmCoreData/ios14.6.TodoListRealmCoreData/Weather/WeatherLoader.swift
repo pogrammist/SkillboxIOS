@@ -26,7 +26,7 @@ class WeatherLoader {
                     let currentPressure = weather["pressure"] as? Int,
                     let currentTempCels = weather["temp"] as? Double else { return }
                 
-                let currentWeather = WeatherMain()
+                let currentWeather = Weather()
                 currentWeather.humidity = currentHumidity
                 currentWeather.pressure = currentPressure
                 currentWeather.temp = WeatherLoader.convertToCelsius(fahrenheit: currentTempCels)
@@ -85,27 +85,21 @@ class WeatherLoader {
                         let wind = data["wind"] as? NSDictionary,
                         let weather = data["weather"] as? [NSDictionary] else { return }
                     
-                    let dataMain = WeatherMain()
                     guard let humidity = main["humidity"] as? Int,
                         let pressure = main["pressure"] as? Int,
                         let tempCels = main["temp"] as? Double else { return }
-                    dataMain.humidity = humidity
-                    dataMain.pressure = pressure
-                    dataMain.temp = WeatherLoader.convertToCelsius(fahrenheit: tempCels)
                     
-                    let dataWind = Wind()
                     guard let speed = wind["speed"] as? Double else { return }
-                    dataWind.speed = speed
                     
-                    let dataWeather = Weather()
                     guard let mn = weather[0]["main"] as? String else { return }
-                    dataWeather.main = mn
                     
                     let weatherDetail = WeatherDetail()
                     weatherDetail.dtTxt = dtTxt
-                    weatherDetail.main = dataMain
-                    weatherDetail.wind = dataWind
-                    weatherDetail.weather = dataWeather
+                    weatherDetail.humidity = humidity
+                    weatherDetail.pressure = pressure
+                    weatherDetail.temp = WeatherLoader.convertToCelsius(fahrenheit: tempCels)
+                    weatherDetail.main = mn
+                    weatherDetail.speed = speed
                     weathers.append(weatherDetail)
                 }
                 

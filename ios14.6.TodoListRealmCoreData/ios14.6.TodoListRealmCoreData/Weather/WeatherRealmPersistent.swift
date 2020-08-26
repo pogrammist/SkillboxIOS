@@ -13,8 +13,8 @@ class WeatherRealmPersistent {
     
     private let realm = try! Realm()
     
-    var weather: WeatherMain? {
-        return realm.objects(WeatherMain.self).first
+    var weather: Weather? {
+        return realm.objects(Weather.self).first
     }
     
     var weathers: [WeatherDetail] {
@@ -25,7 +25,7 @@ class WeatherRealmPersistent {
         return weathers
     }
     
-    func addWeather(weather: WeatherMain) {
+    func addWeather(weather: Weather) {
         try! realm.write {
             realm.deleteAll()
             realm.add(weather)
