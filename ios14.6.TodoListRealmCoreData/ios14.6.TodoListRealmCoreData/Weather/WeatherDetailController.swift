@@ -38,15 +38,14 @@ extension WeatherDetailController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherDetailCell") as! WeatherDetailTableViewCell
         let data = weathers[indexPath.row]
         
-        let tempKelvin: Double = data.temp
-        let tempCels: Int = Int(WeatherLoader.convertToCelsius(fahrenheit: tempKelvin))
+        let temp: Int = Int(data.temp)
         let pressure = data.pressure
         let humidity = data.humidity
         let speed = data.speed
         let weather = data.main
         
         cell.dateLabel.text = data.dtTxt
-        cell.weatherLabel.text = "Temperature: \(tempCels)ºC\n" + "Pressure: \(pressure)\n" + "Humidity: \(humidity)\n" + "Wind speed: \(speed)m/s \n" + "\(weather)"
+        cell.weatherLabel.text = "Temperature: \(temp)ºC\n" + "Pressure: \(pressure)\n" + "Humidity: \(humidity)\n" + "Wind speed: \(speed)m/s \n" + "\(weather)"
         return cell
     }
 }

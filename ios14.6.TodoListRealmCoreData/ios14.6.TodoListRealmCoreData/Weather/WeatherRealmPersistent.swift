@@ -27,7 +27,7 @@ class WeatherRealmPersistent {
     
     func addWeather(weather: Weather) {
         try! realm.write {
-            realm.deleteAll()
+//            realm.deleteAll()
             realm.add(weather)
         }
     }

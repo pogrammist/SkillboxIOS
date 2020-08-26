@@ -18,7 +18,7 @@ class WeatherController: UIViewController {
         
         if let realmWeather = WeatherRealmPersistent.storage.weather {
             weatherLabel.text = "Sometime in Moscow:\n" +
-                "Humidity: \(realmWeather.humidity)\n" + "Temperature: \(realmWeather.temp)ºC\n" + "Pressure: \(realmWeather.pressure)"
+                "Humidity: \(realmWeather.humidity)\n" + "Temperature: \(Int(realmWeather.temp))ºC\n" + "Pressure: \(realmWeather.pressure)"
             weatherLabel.textColor = .red
         }
         

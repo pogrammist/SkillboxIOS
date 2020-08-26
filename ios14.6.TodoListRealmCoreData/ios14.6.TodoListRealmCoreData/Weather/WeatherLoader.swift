@@ -24,18 +24,18 @@ class WeatherLoader {
                 let weather = jsonDict["main"] as! NSDictionary
                 guard let currentHumidity = weather["humidity"] as? Int,
                     let currentPressure = weather["pressure"] as? Int,
-                    let currentTempCels = weather["temp"] as? Double else { return }
+                    let currentTemp = weather["temp"] as? Double else { return }
                 
                 let currentWeather = Weather()
                 currentWeather.humidity = currentHumidity
                 currentWeather.pressure = currentPressure
-                currentWeather.temp = WeatherLoader.convertToCelsius(fahrenheit: currentTempCels)
+                currentWeather.temp = WeatherLoader.convertToCelsius(kelvin: currentTemp)
                 
                 DispatchQueue.main.async {
                     SVProgressHUD.dismiss()
                     WeatherRealmPersistent.storage.addWeather(weather: currentWeather)
                     let weatherText = "Now in Moscow:\n" +
-                        "Humidity: \(currentHumidity)\n" + "Temperature: \(currentTempCels)ºC\n" + "Pressure: \(currentPressure)"
+                        "Humidity: \(currentWeather.humidity)\n" + "Temperature: \( Int(currentWeather.temp))ºC\n" + "Pressure: \(currentWeather.pressure)"
                     completion(weatherText)
                 }
             } else {
@@ -87,7 +87,7 @@ class WeatherLoader {
                     
                     guard let humidity = main["humidity"] as? Int,
                         let pressure = main["pressure"] as? Int,
-                        let tempCels = main["temp"] as? Double else { return }
+                        let tempKelvin = main["temp"] as? Double else { return }
                     
                     guard let speed = wind["speed"] as? Double else { return }
                     
@@ -97,7 +97,7 @@ class WeatherLoader {
                     weatherDetail.dtTxt = dtTxt
                     weatherDetail.humidity = humidity
                     weatherDetail.pressure = pressure
-                    weatherDetail.temp = WeatherLoader.convertToCelsius(fahrenheit: tempCels)
+                    weatherDetail.temp = WeatherLoader.convertToCelsius(kelvin: tempKelvin)
                     weatherDetail.main = mn
                     weatherDetail.speed = speed
                     weathers.append(weatherDetail)
@@ -114,7 +114,8 @@ class WeatherLoader {
 }
 
 extension WeatherLoader {
-    static func convertToCelsius (fahrenheit: Double) -> Double {
-        return Double ((5.0 / 9.0) * (Double (fahrenheit) - 32.0))
+    static func convertToCelsius (kelvin: Double) -> Double {
+        let modulCels = 273.15
+        return kelvin - modulCels
     }
 }
