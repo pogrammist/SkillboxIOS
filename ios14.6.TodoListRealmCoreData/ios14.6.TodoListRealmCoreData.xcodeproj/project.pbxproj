@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C14D5CEFC345D6658CF67896 /* Pods_ios14_6_TodoListRealmCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */; };
 		CE62558924F5212300FFE390 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62558824F5212300FFE390 /* Weather.swift */; };
 		CE65C55824F3B5B700FE76F9 /* WeatherRealmPersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C55724F3B5B700FE76F9 /* WeatherRealmPersistent.swift */; };
 		CE7FF10824F3930700585A74 /* WeatherDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */; };
@@ -28,14 +27,16 @@
 		CEE6355824EBBB5600BCF71E /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355724EBBB5600BCF71E /* RealmViewController.swift */; };
 		CEE6355A24EBBCCA00BCF71E /* RealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */; };
 		CEE6355C24EBC05300BCF71E /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */; };
+		CEEAE23824F7DB9F00315630 /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEAE23324F7DB9F00315630 /* libAlamofire.a */; };
+		CEEAE23A24F7DB9F00315630 /* libRealm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEAE23524F7DB9F00315630 /* libRealm.a */; };
+		CEEAE23B24F7DB9F00315630 /* libRealmSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEAE23624F7DB9F00315630 /* libRealmSwift.a */; };
+		CEEAE23C24F7DB9F00315630 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEAE23724F7DB9F00315630 /* libSVProgressHUD.a */; };
 		CEF1E70124EF0F4100861E67 /* RealmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; sourceTree = "<group>"; };
-		93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; sourceTree = "<group>"; };
-		9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios14_6_TodoListRealmCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1578130CC158380AA8343F83 /* libPods-ios14.6.TodoListRealmCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios14.6.TodoListRealmCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B73A6593377E2FCAE207B14 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		CE62558824F5212300FFE390 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		CE65C55724F3B5B700FE76F9 /* WeatherRealmPersistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealmPersistent.swift; sourceTree = "<group>"; };
 		CE7FF10324F3930700585A74 /* WeatherDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -61,11 +62,21 @@
 		CEAED4F524EFB0570014941A /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		CEAED4F624EFB0570014941A /* CoreDataPersistent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistent.swift; sourceTree = "<group>"; };
 		CEAED4F724EFB0570014941A /* CoreDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewCell.swift; sourceTree = "<group>"; };
+		CEDD1705BF351B9565CADD7F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; path = "Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		CEE36D4024EB6EE3009D27F4 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
 		CEE36D4224EB7195009D27F4 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		CEE6355724EBBB5600BCF71E /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmViewController.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmViewController.swift; sourceTree = SOURCE_ROOT; };
 		CEE6355924EBBCCA00BCF71E /* RealmEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmEntity.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmEntity.swift; sourceTree = SOURCE_ROOT; };
 		CEE6355B24EBC05300BCF71E /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmPersistence.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmPersistence.swift; sourceTree = SOURCE_ROOT; };
+		CEEAE22424F7D6E300315630 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE22524F7D6E300315630 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE22624F7D6E300315630 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE22724F7D6E300315630 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE23324F7DB9F00315630 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE23424F7DB9F00315630 /* libPods-ios14.6.TodoListRealmCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-ios14.6.TodoListRealmCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE23524F7DB9F00315630 /* libRealm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE23624F7DB9F00315630 /* libRealmSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRealmSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEEAE23724F7DB9F00315630 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1E70024EF0F4100861E67 /* RealmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmTableViewCell.swift; path = ios14.6.TodoListRealmCoreData/Realm/RealmTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -74,7 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14D5CEFC345D6658CF67896 /* Pods_ios14_6_TodoListRealmCoreData.framework in Frameworks */,
+				CEEAE23A24F7DB9F00315630 /* libRealm.a in Frameworks */,
+				CEEAE23C24F7DB9F00315630 /* libSVProgressHUD.a in Frameworks */,
+				CEEAE23824F7DB9F00315630 /* libAlamofire.a in Frameworks */,
+				CEEAE23B24F7DB9F00315630 /* libRealmSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,8 +98,8 @@
 		6C957209A4E346CFA20FC61D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */,
-				0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */,
+				CEDD1705BF351B9565CADD7F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */,
+				3B73A6593377E2FCAE207B14 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -93,6 +107,15 @@
 		BEDBED10524F7253D3EFB2D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEEAE23324F7DB9F00315630 /* libAlamofire.a */,
+				CEEAE23424F7DB9F00315630 /* libPods-ios14.6.TodoListRealmCoreData.a */,
+				CEEAE23524F7DB9F00315630 /* libRealm.a */,
+				CEEAE23624F7DB9F00315630 /* libRealmSwift.a */,
+				CEEAE23724F7DB9F00315630 /* libSVProgressHUD.a */,
+				CEEAE22424F7D6E300315630 /* Alamofire.framework */,
+				CEEAE22524F7D6E300315630 /* Realm.framework */,
+				CEEAE22624F7D6E300315630 /* RealmSwift.framework */,
+				CEEAE22724F7D6E300315630 /* SVProgressHUD.framework */,
 				CEA0C8BF24ED34310029D73F /* libRealm.a */,
 				CEA0C8C024ED34310029D73F /* libRealmSwift.a */,
 				CEA0C8B824ED32E10029D73F /* RealmSwift.framework */,
@@ -101,7 +124,7 @@
 				CEA0C8A824ED32490029D73F /* Realm.framework */,
 				CEA0C89E24ED31DB0029D73F /* Realm.framework */,
 				CEA0C89F24ED31DB0029D73F /* RealmSwift.framework */,
-				0523074973AFAB6CFFC32ECE /* Pods_ios14_6_TodoListRealmCoreData.framework */,
+				1578130CC158380AA8343F83 /* libPods-ios14.6.TodoListRealmCoreData.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,7 +213,6 @@
 		CEA0C8BE24ED33AE0029D73F /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				9F2CEC90FF92F9BFF7FC1738 /* Pods_ios14_6_TodoListRealmCoreData.framework */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -202,11 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE8AE18324EB69E10016864F /* Build configuration list for PBXNativeTarget "ios14.6.TodoListRealmCoreData" */;
 			buildPhases = (
-				4FA69CB738FCAB32F9D2BE54 /* [CP] Check Pods Manifest.lock */,
+				E55D42A529DAB37C399519E6 /* [CP] Check Pods Manifest.lock */,
 				CE8AE16824EB69DE0016864F /* Sources */,
 				CE8AE16924EB69DE0016864F /* Frameworks */,
 				CE8AE16A24EB69DE0016864F /* Resources */,
-				EE7485FE0A04588B10896EFF /* [CP] Embed Pods Frameworks */,
+				548CCF9606145597718062B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,7 +286,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4FA69CB738FCAB32F9D2BE54 /* [CP] Check Pods Manifest.lock */ = {
+		548CCF9606145597718062B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55D42A529DAB37C399519E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,23 +323,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE7485FE0A04588B10896EFF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios14.6.TodoListRealmCoreData/Pods-ios14.6.TodoListRealmCoreData-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,7 +491,7 @@
 		};
 		CE8AE18424EB69E10016864F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93C2DD52230374CD314E991F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */;
+			baseConfigurationReference = CEDD1705BF351B9565CADD7F /* Pods-ios14.6.TodoListRealmCoreData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -489,7 +511,7 @@
 		};
 		CE8AE18524EB69E10016864F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FABAE1C9FDF18B1816143E2 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */;
+			baseConfigurationReference = 3B73A6593377E2FCAE207B14 /* Pods-ios14.6.TodoListRealmCoreData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

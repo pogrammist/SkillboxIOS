@@ -9,9 +9,14 @@ import Foundation
 import RealmSwift
 
 class Weather: Object {
-    @objc var humidity = Int()
-    @objc var pressure = Int()
-    @objc var temp = Double()
+    @objc dynamic var id = 0
+    @objc dynamic var humidity = Int()
+    @objc dynamic var pressure = Int()
+    @objc dynamic var temp = Double()
+    
+    override static func primaryKey() -> String? {
+      return "id"
+    }
 }
 
 class WeatherDetail: Object {

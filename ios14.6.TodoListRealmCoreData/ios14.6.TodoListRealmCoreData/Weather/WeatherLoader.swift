@@ -33,13 +33,16 @@ class WeatherLoader {
                 
                 DispatchQueue.main.async {
                     SVProgressHUD.dismiss()
-                    WeatherRealmPersistent.storage.addWeather(weather: currentWeather)
+                    WeatherRealmPersistent.storage.updateWeather(weather: currentWeather, humidity: currentWeather.humidity, pressure: currentWeather.pressure, temp: currentWeather.temp)
                     let weatherText = "Now in Moscow:\n" +
                         "Humidity: \(currentWeather.humidity)\n" + "Temperature: \( Int(currentWeather.temp))ºC\n" + "Pressure: \(currentWeather.pressure)"
                     completion(weatherText)
                 }
             } else {
-                completion(nil)
+                DispatchQueue.main.async {
+                    SVProgressHUD.dismiss()
+                    completion(nil)
+                }
             }
         }
         task.resume()

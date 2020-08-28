@@ -15,21 +15,28 @@ class WeatherController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let realmWeather = WeatherRealmPersistent.storage.weather {
-            weatherLabel.text = "Sometime in Moscow:\n" +
-                "Humidity: \(realmWeather.humidity)\n" + "Temperature: \(Int(realmWeather.temp))ºC\n" + "Pressure: \(realmWeather.pressure)"
-            weatherLabel.textColor = .red
-        }
-        
-        let loader = WeatherLoader()
-        loader.loadWeather { weather in
+        showRealmWeather()
+        showWeather()
+    }
+    
+    func showWeather() {
+        WeatherLoader.shared.loadWeather { weather in
             if let weather = weather {
                 self.weatherLabel.text = "\(weather)"
                 self.weatherLabel.textColor = .black
             } else {
-                self.weatherLabel.text = "Error"
+                self.showRealmWeather()
             }
+        }
+    }
+    
+    func showRealmWeather() {
+        weatherLabel.textColor = .red
+        if let realmWeather = WeatherRealmPersistent.storage.weather {
+            weatherLabel.text = "Sometime in Moscow:\n" +
+                "Humidity: \(realmWeather.humidity)\n" + "Temperature: \(Int(realmWeather.temp))ºC\n" + "Pressure: \(realmWeather.pressure)"
+        } else {
+            weatherLabel.text = "The Internet connection appears to be offline"
         }
     }
 }

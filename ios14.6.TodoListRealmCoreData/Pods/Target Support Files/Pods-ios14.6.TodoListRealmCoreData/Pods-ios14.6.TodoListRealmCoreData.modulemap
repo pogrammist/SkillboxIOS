@@ -1,4 +1,4 @@
-framework module Pods_ios14_6_TodoListRealmCoreData {
+module Pods_ios14_6_TodoListRealmCoreData {
   umbrella header "Pods-ios14.6.TodoListRealmCoreData-umbrella.h"
 
   export *

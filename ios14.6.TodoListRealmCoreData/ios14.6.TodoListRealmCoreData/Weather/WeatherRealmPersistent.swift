@@ -17,19 +17,24 @@ class WeatherRealmPersistent {
         return realm.objects(Weather.self).first
     }
     
+    func updateWeather(weather: Weather, humidity: Int, pressure: Int, temp: Double) {
+        try! realm.write {
+            if realm.objects(Weather.self).isEmpty {
+                realm.add(weather)
+            } else {
+                weather.humidity = humidity
+                weather.pressure = pressure
+                weather.temp = temp
+            }
+        }
+    }
+    
     var weathers: [WeatherDetail] {
         var weathers: [WeatherDetail] = []
         for weather in realm.objects(WeatherDetail.self) {
             weathers.append(weather)
         }
         return weathers
-    }
-    
-    func addWeather(weather: Weather) {
-        try! realm.write {
-//            realm.deleteAll()
-            realm.add(weather)
-        }
     }
     
     func addWeatherDetail(weathers: [WeatherDetail]) {
