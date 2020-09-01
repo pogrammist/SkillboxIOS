@@ -48,30 +48,6 @@ class WeatherLoader {
         task.resume()
     }
     
-    //    func loadWeatherDetail(completion: @escaping ([WeatherDetail]) ->Void) {
-    //        let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=Moscow&appid=255361a5257395ebde042ddfa8573ffd")!
-    //        let request = URLRequest(url: url)
-    //        SVProgressHUD.show()
-    //        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-    //            if let data = data,
-    //                let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
-    //                let jsonDict = json as? NSDictionary,
-    //                let list = jsonDict["list"] as? [NSDictionary]{
-    //
-    //                var weathers: [WeatherDetail] = []
-    //                for data in list{
-    //                    let weather = WeatherDetail(data: data)!
-    //                    weathers.append(weather)
-    //                }
-    //                DispatchQueue.main.async {
-    //                    SVProgressHUD.dismiss()
-    //                    completion(weathers)
-    //                }
-    //            }
-    //        }
-    //        task.resume()
-    //    }
-    //
     func loadWeatherDetailAlamofire(completion: @escaping ([WeatherDetail]) ->Void) {
         SVProgressHUD.show()
         AF.request("https://api.openweathermap.org/data/2.5/forecast?q=Moscow&appid=255361a5257395ebde042ddfa8573ffd").responseJSON{
@@ -110,6 +86,11 @@ class WeatherLoader {
                     SVProgressHUD.dismiss()
                     WeatherRealmPersistent.storage.addWeatherDetail(weathers: weathers)
                     completion(weathers)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    SVProgressHUD.dismiss()
+                    completion([])
                 }
             }
         }

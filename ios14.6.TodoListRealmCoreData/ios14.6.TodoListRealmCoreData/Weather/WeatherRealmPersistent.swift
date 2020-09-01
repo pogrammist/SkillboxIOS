@@ -39,9 +39,8 @@ class WeatherRealmPersistent {
     
     func addWeatherDetail(weathers: [WeatherDetail]) {
         try! realm.write {
-            weathers.map {
-                realm.add( $0 )
-            }
+            realm.add(weathers, update: .all)
         }
+        print(realm.objects(WeatherDetail.self).count)
     }
 }

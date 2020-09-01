@@ -18,14 +18,26 @@ class WeatherDetailController: UIViewController, UITableViewDelegate {
         
         weatherDetailTableView.dataSource = self
         
-        weathers = WeatherRealmPersistent.storage.weathers
-        print(weathers.count)
-        weatherDetailTableView.reloadData()
-        
+        showRealmWeather()
+        showWeather()
+    }
+    
+    func showWeather() {
         WeatherLoader.shared.loadWeatherDetailAlamofire { weathers in
-            self.weathers = weathers
-            self.weatherDetailTableView.reloadData()
+            if weathers.isEmpty {
+                self.showRealmWeather()
+            } else {
+                self.weathers = weathers
+                self.weatherDetailTableView.separatorColor = .lightGray
+                self.weatherDetailTableView.reloadData()
+            }
         }
+    }
+    
+    func showRealmWeather() {
+        weathers = WeatherRealmPersistent.storage.weathers
+        weatherDetailTableView.separatorColor = .red
+        weatherDetailTableView.reloadData()
     }
 }
 
